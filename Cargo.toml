@@ -1,0 +1,19 @@
+[package]
+name = "serenity_group_name"
+version = "0.1.0"
+authors = ["Oscar <osmithsi@sfu.ca>"]
+edition = "2018"
+
+license = "MIT"
+repository = "https://github.com/Jerald/serenity_group_name"
+description = "I don't know what I'm doing with proc macros, but I hacked together this thing to convert an identifier to SCREAMING_SNAKE_CASE and append \"_GROUP\" and it works."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "0.15.42"
+proc-macro2 = "0.4.30"
+quote = "0.6.13"
